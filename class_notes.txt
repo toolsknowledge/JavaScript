@@ -1,0 +1,207 @@
+https://github.com/toolsknowledge/JavaScript.git
+
+
+
+
+
+
+
+
+
+
+Introduction to JavaScript
+**************************
+
+	- JavaScript is the Scripting Language.
+
+	- JavaScript Released by Netscape.
+
+	- Current Version of JavaScript is ES13.
+
+	- ES Stands for ECMA Script.
+
+	- JavaScript used to convert static webpages to dynamic webpages.
+
+	- JavaScript used to perform client side validations
+
+	- JavaScript used to build the Angular,React,VueJS and 
+     NodeJS,....Applications
+
+	- we will save JavaScript files with ".js" extension
+
+	- <script></script> tag, used to write javascript in webpages
+
+	- Visual Studio Code is Suggestable IDE to build JavaScript 
+     Applications
+
+	- Visual Studio Code is the Open Source IDE and Released by
+     Microsoft
+
+	- we will execute JavaScript in two ways.
+
+			1) Browser
+
+			2) NodeJS
+
+	- Intrepreter is the tool, available in Browser, used to execute
+     the JavaScript
+
+	- node is the tool, available in NodeJS, used to execute the
+     JavaScript
+
+	- By default JavaScript Execution is Synchronous (Intrepreter/node 
+     will execute code line by line)
+
+	- JavaScript is the Object Based Scripting Language
+
+	- Vendor provided so many predefined objects, as a javascript
+     developer we can use those objects
+
+			1) console
+		
+			2) document
+
+			3) window
+
+			4) Date
+
+			---
+			---
+			---
+
+	- console object, used to debug the javascript applications
+
+	- document object, used to manipulate the DOM Elements
+			
+		Ex.
+				paragraphs
+
+				headings
+
+				tables
+	
+				---
+				---
+				---
+
+	- Date object, used to work with the Calenders
+
+	- JavaScript bydefault Mono Threaded (Single Threaded)
+	
+	- we can't create more than one Thread in JavaScript
+
+
+Software Installations
+
+1) download and install NodeJS
+
+		"node" is the tool, used to execute the javascript
+
+	website : https://nodejs.org/en/download/
+
+	file    : node-v16.15.0-x64.msi
+
+
+2) download and install Visual Studio Code
+
+	Visual Studio Code is the IDE
+
+	VSCode IDE Recomended to develop web applications
+
+	Visual Studio Code IDE provided by microsoft and open source IDE
+
+
+	website : https://code.visualstudio.com/docs/?dv=win
+
+	file    : VSCodeUserSetup-x64-1.67.2.exe
+
+
+Enabling Settings in VSCode
+***************************
+
+1) Enable "CMD" mode as Default Profile Mode
+
+
+
+2) Enable Auto Save Mode
+
+		Click the Settings Icon ===> Settings ===> Auto Save ==> afterDelay 
+
+
+Execution of JavaScript
+***********************
+
+> node demo.js
+
+	where "demo.js" is the name of the javascript file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
