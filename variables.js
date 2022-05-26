@@ -185,6 +185,70 @@ var {sub_one,sub_two,sub_three} = obj;
 console.log(sub_one,sub_two,sub_three);
 
 
+//bigint
+//bigint used to represent the "big/large" number
+//we will represent bigint with suffix "n"
+//range of bigint is ">2^53 - 1"
+var large = 123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789n;
+console.log(large);
+
+//symbol
+//symbol used to provide the secuirity to data(variable)
+var secured = Symbol("Hello");
+console.log(secured);                   //Symbol(Hello)
+
+console.log( typeof 1n );               //bigint
+console.log( typeof secured );          //symbol
+
+console.log(1n / 1n);                   //1n
+console.log( 2n / 2 );                  
+                      //Cannot mix BigInt and other types
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
