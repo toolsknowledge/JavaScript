@@ -1,14 +1,3 @@
-https://github.com/toolsknowledge/JavaScript.git
-
-
-
-
-
-
-
-
-
-
 Introduction to JavaScript
 **************************
 

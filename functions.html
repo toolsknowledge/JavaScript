@@ -1,0 +1,234 @@
+<!--
+    Functions
+    *********
+        particular business logic called as function
+
+        Functions are used to reuse the business logic
+    Types of Functions
+    ******************
+    1) Named Functions
+
+    2) Anonymous Functions / 
+       Nameless functions / 
+       Arrow Functions / 
+       Callback Functions /
+       Fat Arrow Functions    (ES6)
+
+    3) Rest Parameters in Functions   (ES6)
+
+    4) Default Parameters in Functions  (ES6)
+
+    5) Constructor Functions
+
+    6) Genarator Functions     (ES6)
+
+    7) IIFE (Immidiate Invokable Functional Expression)
+        (ES9)
+
+    8) Optional Parameters in Functions  (ES6)
+
+1) Named Functions
+******************
+    The function with particular name(user defined name)
+called as named function
+
+Syntax
+******
+1) Function Definition
+
+2) Function Calling
+
+Function Definition
+*******************
+function function_name(param1,param2,....param n){
+    business logic
+}
+
+Function Calling
+****************
+function_name(arg1,arg2,....arg n);
+-->
+<!--
+<script>
+    function func_one(){
+        let sub_one = "ReactJS";
+        let sub_two = "NodeJS";
+        let sub_three = "MongoDB";
+        let mern_stack = `${sub_one}...${sub_two}...${sub_three}`;
+        console.log(mern_stack);
+    }
+    func_one();
+    //ReactJS...NodeJS...MongoDB
+</script>
+-->
+
+<!--
+<script>
+    function func_one(){
+        console.log("welcome to named functions");
+    }
+    console.log( func_one );
+    //def
+</script>
+-->
+
+<!--
+<script>
+    function func_one(){
+        return "Hello";
+    }
+    let res = func_one();
+    console.log(res);
+    //Hello
+</script>
+-->
+<!--
+<script>
+    function func_one(){
+        return func_two;
+    }
+    function func_two(){
+        return "Hello";
+    }
+    console.log( func_one()() );
+    //Hello
+</script>
+-->
+
+<!--
+<script>
+    function func_one(param1,param2,param3){
+        console.log(param1,param2,param3);
+    };
+    func_one("Hello_1","Hello_2","Hello_3");
+    //Hello_1 Hello_2 Hello_3
+    
+    func_one();
+    //undefined undefined undefined
+    
+    func_one(undefined,"Hello_2");
+    //undefined 'Hello_2' undefined
+
+    func_one(null,null,null);
+    //null null null
+
+    func_one("Hello_1","Hello_2","Hello_3","Hello_4");
+    //Hello_1 Hello_2 Hello_3
+</script>
+-->
+
+<!--
+<script>
+    let arr = [];
+    function func_one(){
+        return "Hello";
+    }
+    for(let i=0;i<5;i++){
+        arr.push( func_one() );
+    }
+    console.log(arr);
+    //['Hello', 'Hello', 'Hello', 'Hello', 'Hello']
+</script>
+-->
+
+<!--
+<script>
+    let arr = [];
+    function func_one(){
+        return "Hello";
+    }
+    for(let i=0;i<5;i++){
+        arr.push( func_one );
+    }
+    console.log( arr[0]() );    //Hello
+    console.log( arr[1]() );    //Hello
+    console.log( arr[2]() );    //Hello
+    console.log( arr[3]() );    //Hello
+    console.log( arr[4]() );    //Hello
+</script>
+-->
+
+
+
+<!--
+    Spread Operator
+    ***************
+        ... called as spread Operator
+
+        spread Operator introduced in ES6
+
+        spread Operator used to store more than one value
+
+        default value of spread Operator is []
+
+
+
+
+
+-->
+
+<!--
+<script>
+    function func_one(...param1){
+        console.log(param1);
+    };
+    func_one("Hello_1","Hello_2");   
+                //['Hello_1', 'Hello_2']
+    
+    func_one(); //[]
+
+    func_one(undefined,undefined);
+            //[undefined, undefined]
+    
+    func_one(null,null,undefined);
+            //[null, null, undefined]
+</script>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
