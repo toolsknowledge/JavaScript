@@ -155,35 +155,173 @@ function_name(arg1,arg2,....arg n);
     ***************
         ... called as spread Operator
 
-        spread Operator introduced in ES6
+        spread Operator introduced in "ES6"
 
         spread Operator used to store more than one value
 
         default value of spread Operator is []
 
+        we can pass only one spread operator per function
 
-
-
-
+        spread operator must be last in occurances
 -->
 
 <!--
 <script>
     function func_one(...param1){
         console.log(param1);
-    };
-    func_one("Hello_1","Hello_2");   
-                //['Hello_1', 'Hello_2']
-    
-    func_one(); //[]
-
-    func_one(undefined,undefined);
-            //[undefined, undefined]
-    
-    func_one(null,null,undefined);
-            //[null, null, undefined]
+    }
+    func_one(10,20,30);                      //[10, 20, 30]
+    func_one("ReactJS","Angular13","VueJS"); //['ReactJS', 'Angular13', 'VueJS']
+    func_one();                              //[]
+    func_one(undefined,undefined);           //[undefined, undefined]
+    func_one(null,null);                     //[null, null]
 </script>
 -->
+
+<!--
+<script>
+    function func_one(...param1,...param2){
+
+    }
+    //A rest parameter must be last in a parameter list.
+</script>
+-->
+
+<!--
+<script>
+    function func_one(...param2,param1){}
+    //A rest parameter(spread operator) must be last in a parameter list.
+</script>
+-->
+
+<!--
+<script>
+    function func_one(param1,...param2){
+        console.log(param1,param2);
+    }
+    func_one();                         //undefined []
+    func_one(undefined,undefined);      //undefined [undefined]
+    func_one(null,null);                //null [null]
+    func_one(100,100);                  //100 [100]
+    func_one("Hello_1","Hello_2");      //Hello_1 ['Hello_2']
+    func_one(true,false,true);          //true [false, true]
+</script>
+-->
+
+
+<!--
+    Default Parameters in Functions
+
+        while defining the functions, we will initilize the parameters
+        with default values
+
+        This concept also introduced in ES6
+-->
+
+<!--
+<script>
+    function func_one(param1="Hello_1",
+                      param2="Hello_2",
+                      param3="Hello_3"){
+        console.log(param1,param2,param3);
+    }
+    func_one();                                     //Hello_1 Hello_2 Hello_3
+    func_one("Welcome_1","Welcome_2","Welcome_3");  //Welcome_1 Welcome_2 Welcome_3
+    func_one(undefined,undefined,undefined);        //Hello_1 Hello_2 Hello_3
+    func_one(null,null,null);                       //null null null
+    func_one(undefined,"Welcome_2");                //Hello_1 Welcome_2 Hello_3
+</script>
+-->
+
+
+<!--
+<script>
+    function func_one(param1,param2="Hello_2",...param3){
+        console.log(param1,param2,param3);
+    }
+    func_one();                                 //undefined 'Hello_2' []
+    func_one(undefined,undefined,undefined);    //undefined 'Hello_2' [undefined]
+    func_one(null,null,null);                   //null null [null]
+    func_one("Hello_1",undefined,"Hello_3");    //Hello_1 Hello_2 ['Hello_3']
+</script>
+-->
+
+
+<!--
+    Constructor Functions
+    *********************
+        collection of variables and functions called as "class"
+
+        we can create "classes", before ES6 version by using Constructor functions
+
+        we can create object to the class by using "new" keyword
+
+        in Constructor functions all the members will start with "this" keyword
+-->
+
+<!--
+<script>
+    function class_one(){
+        this.var_one = "Hello_1";
+    }
+
+    let obj = new class_one();
+    console.log( obj.var_one );         //Hello_1
+
+</script>
+-->
+<script>
+    function class_one(){
+        this.var_one = "Hello_1";
+        this.var_two = "Hello_2";
+        this.var_three = "Hello_3";
+       this.m1 = function(){
+            return this.var_one;
+       }
+       this.m2 = function(){
+            return this.var_two;
+       }
+       this.m3 = function(){
+            return this.var_three;
+       }
+    }
+    let obj = new class_one();
+    console.log( obj.m1(), obj.m2(), obj.m3() );
+    //Hello_1 Hello_2 Hello_3
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
