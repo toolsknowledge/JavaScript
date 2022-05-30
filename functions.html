@@ -259,56 +259,165 @@ function_name(arg1,arg2,....arg n);
 
         in Constructor functions all the members will start with "this" keyword
 -->
+<!--
+<script>
+    function class_one(){
+        this.var_one = "Hello";
+    }
+    let obj = new class_one();
+    console.log( obj.var_one );             //Hello
+</script>
+-->
 
 <!--
 <script>
     function class_one(){
-        this.var_one = "Hello_1";
+        this.sub_one = "ReactJS";
+        this.sub_two = "NodeJS";
+        this.sub_three = "MongoDB";
+        this.getSubOne = function(){
+            return this.sub_one;
+        }
+        this.getSubTwo = function(){
+            return this.sub_two;
+        }
+        this.getSubThree = function(){
+            return this.sub_three;
+        }
     }
-
     let obj = new class_one();
-    console.log( obj.var_one );         //Hello_1
-
+    console.log(
+        obj.getSubOne(),
+        obj.getSubTwo(),
+        obj.getSubThree()
+    );
+    //ReactJS NodeJS MongoDB
 </script>
 -->
+
+
+
+<!--
 <script>
     function class_one(){
-        this.var_one = "Hello_1";
-        this.var_two = "Hello_2";
-        this.var_three = "Hello_3";
-       this.m1 = function(){
-            return this.var_one;
-       }
-       this.m2 = function(){
-            return this.var_two;
-       }
-       this.m3 = function(){
-            return this.var_three;
-       }
+
+    };
+    class_one.prototype.var_one = "Hello_1";
+    let obj = new class_one();
+    console.log( obj.var_one );  //Hello_1
+</script>
+-->
+<!--
+<script>
+    function class_one(){
+
+    };
+    class_one.prototype.var_one = "Hello";
+    class_one.prototype.fun_one = function(){
+        return this.var_one;
     }
     let obj = new class_one();
-    console.log( obj.m1(), obj.m2(), obj.m3() );
-    //Hello_1 Hello_2 Hello_3
+    console.log( obj.fun_one() );      //Hello
 </script>
+-->
+
+<!--
+<script>
+    function class_one(){
+
+    };
+    class_one.prototype.var_one = "Hello_1";
+
+    function class_two(){
+
+    }
+    class_two.prototype = Object.create(class_one.prototype);
+    class_two.prototype.var_two = "Hello_2";
+
+    let obj1 = new class_one();
+    console.log( obj1.var_one );
+
+    let obj2 = new class_two();
+    console.log(obj2.var_one, obj2.var_two );
+</script>
+-->
+
+<!--
+<script>
+    function Parent(){
+    };
+    Parent.prototype.fun_one = function(){
+        return "Hello_1";
+    }
+    function Child(){
+    };
+    Child.prototype = Object.create(Parent.prototype);
+    Child.prototype.fun_two = function(){
+        return "Hello_2";
+    };
+    function Subchild(){
+    };
+    Subchild.prototype = Object.create(Child.prototype);
+    Subchild.prototype.fun_three = function(){
+        return "Hello_3";
+    };
+    let obj1 = new Parent();
+    console.log( obj1.fun_one() );
+
+    let obj2 = new Child();
+    console.log( obj2.fun_one(), obj2.fun_two() );
+
+    let obj3 = new Subchild();
+    console.log(obj3.fun_one(), obj3.fun_two(), obj3.fun_three());
+</script>
+-->
 
 
+<!--
+    IIFE
+    ****
+        IIFE Stands for Immidiate Invokable Functional
+        Expression
+
+        IIFE Introduced in ES9
+
+        when ever we create IIFE, it will execute automatically
 
 
+        Syntax
+        ******
+        ((param1,param2,param3,,,,param n)=>{
+            //business logic
+        })(arg1,arg2,arg3,....arg n)
+-->
+<!--
+<script>
+    (()=>{
+        console.log("Hello");
+    })()
+    //Hello
+</script>
+-->
+
+<!--
+<script>
+    ((param1,param2,param3)=>{
+        console.log(param1,param2,param3);
+    })("ReactJS","NodeJS","MongoDB");
+    //ReactJS NodeJS MongoDB
+</script>
+-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script>
+    for(var i=0;i<5;i++){
+        ((i)=>{
+            setTimeout(()=>{
+                console.log(i);
+            },5000)
+        })(i);
+    }
+</script>
 
 
 
