@@ -408,7 +408,7 @@ function_name(arg1,arg2,....arg n);
 </script>
 -->
 
-
+<!--
 <script>
     for(var i=0;i<5;i++){
         ((i)=>{
@@ -418,6 +418,185 @@ function_name(arg1,arg2,....arg n);
         })(i);
     }
 </script>
+-->
+
+<!--
+    Genarator Functions
+
+    Genarator Functions, controls the flow of execution
+
+    Genarator Functions introduced in ES6
+
+    Genarator Functions prefix with "*"
+
+    all statements in Genarator Functions starts with "yield" keyword
+
+    Genarator Functions returns "cursor" mechanism
+
+    by using cursor mechanism we can control flow of execution
+-->
+
+<!--
+<script>
+    function *func_one(){
+        yield "Hello_1";
+        yield "Hello_2";
+        yield "Hello_3";
+    }
+    let cursor = func_one();
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+    console.log( cursor.next() );
+</script>
+-->
+
+
+
+<!--
+<script>
+    function *func_one(){
+        yield "Hello_1";
+        yield *func_three();
+        yield *func_two();
+        yield "Hello_4";
+        return "Hello_5";
+        yield "Hello_6";
+    }
+    function *func_two(){
+        yield "Hello_2";
+    }
+    function *func_three(){
+        yield "Hello_3";
+    }
+    let cursor = func_one();
+    for(let i=0;i<6;i++){
+        console.log(cursor.next());
+    }
+</script>
+-->
+
+<!--
+    Anonymous Functions
+    *******************
+        - The function without name called as Anonymous Function
+
+        - Anonymous Functions also called as Arrow Functions
+
+        - Arrow functions introduced in ES6
+
+        Syntax
+        ******
+   var/let/const variablename = (param1,param2,param3.....param n)=>{
+       business logic
+   }
+
+
+   variablename(arg1,arg2,arg3,....arg n);
+-->
+
+<!--
+<script>
+    let func_one = ()=>{
+        return "welcome to arrow functions";
+    }
+    console.log( func_one() );
+    //welcome to arrow functions
+</script>
+-->
+
+
+<!--
+<script>
+    let func_one = (param1,param2,param3)=>{
+        console.log(param1,param2,param3);
+    }
+    func_one();        //undefined undefined undefined
+    func_one(undefined,"Hello_2");
+                       //undefined 'Hello_2' undefined
+    func_one(null,null);  
+                        //null null undefined
+    func_one("Hello_1","Hello_2","Hello_3","Hello_4");
+                        //Hello_1 Hello_2 Hello_3
+</script>
+-->
+<!--
+<script>
+    let func_one = ()=>{
+       return ()=>{
+           return{
+               "key1":"Hello_1"
+           }
+       }
+    }
+    console.log( func_one()().key1 );
+    //Hello_1
+</script>
+-->
+<script>
+    let func_one = (param1,param2,param3)=>{
+        console.log( param1(),
+                     param2(),
+                     param3() );
+    }
+    func_one( ()=>{
+        return "ReactJS";
+    }, ()=>{
+        return "NodeJS";
+    }, ()=>{
+        return "MongoDB";
+    } );
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
