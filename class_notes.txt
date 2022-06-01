@@ -125,6 +125,90 @@ Execution of JavaScript
 	where "demo.js" is the name of the javascript file
 
 
+Optional Parameters
+*******************
+	while calling the functions few parameters are optional
+
+	optional parameters introduced in "ES6"
+
+	we will represent optional parameters with "?"
+
+	optional parameters won't execute in "javascript" environment
+
+	optional parameters will work in "TypeScript" environment
+
+	TypeScript is the programming language,provided by "microsoft"
+
+	TypeScript Supports "OOPS".
+
+	we will install TypeScript with following command
+
+	> npm install -g typescript
+
+	npm stands for node packaging manager
+
+	npm available in NodeJS
+
+	-g stands for global installation
+
+	we will save the typescript files with ".ts" extension
+
+	in general, browsers can't understand typescript
+
+	so we must convert typescript to equalent javascript
+
+	conversion of typescript to equalent javascript called as "transpilation"
+
+	"tsc" is the tool, used to perform the transpilation
+
+	"tsc" stands for TypeScript Compiler
+
+Syntax
+******
+>tsc demo.ts  ===>  demo.js  ===> node demo.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
