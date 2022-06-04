@@ -135,6 +135,127 @@ let arr15 = ["one","two","three","four","five"];
 
 
 
+let arr16 = [1,2,3,4,5];
+console.log(
+    arr16.filter((element,index)=>{
+        return element>=3;
+    })
+);
+//[ 3, 4, 5 ]
+
+let arr17 = [10,20,30,40,50];
+//[10,20]
+
+
+
+let arr18 = [1,2,3,4,5];
+//[300,400,500]
+//map() && filter()
+console.log(
+    arr18.map((element,index)=>{
+        return element*100;
+    }).filter((element,index)=>{
+        return element>=300;
+    })
+);
+//[ 300, 400, 500 ]
+
+
+let arr19 = [1,2,3,4,5];
+console.log(
+    arr19.reduce((firstElement,nextElement)=>{
+        return firstElement+nextElement;
+    })
+);  //15
+let arr20 = [100,200,300,400,500];
+console.log(
+    arr20.reduce((firstElement,nextElement)=>{
+        return firstElement+nextElement;
+    })
+);   //1500
+let arr21 = [10,20];
+console.log(
+    arr21.reduce((firstElement,nextElement)=>{
+        return firstElement+nextElement;
+    },100)
+);
+//130
+
+let arr22 = [1,2,3,4,5];
+console.log(
+    arr22.map((element,index)=>{
+        return element*100;
+    }).filter((element,index)=>{
+        return element<=500;
+    }).reduce((firstElement,nextElement)=>{
+        return firstElement+nextElement;
+    },500)
+);  
+//2000
+
+let arr23 = [10,20,30,10,20,30];
+arr23.forEach((element,index)=>{
+    console.log( arr23.indexOf(element) );
+});
+//0 1 2 0 1 2
+
+let arr24 = [10,20,30,10,20,30,40];
+console.log(
+    arr24.filter((element,index)=>{
+        return arr24.indexOf(element) == index;
+    })
+);
+//[ 10, 20, 30, 40 ]
+
+
+let arr25 = ["Hello_1","Hello_2","Hello_1","Hello_3","Hello_2"];
+
+
+
+
+let arr26 = [10,20,30,40,50,60,70,80,90,100];
+arr26.copyWithin(3);
+console.log(arr26);   //[10,20,30,10,20,30,40,50,60,70] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
