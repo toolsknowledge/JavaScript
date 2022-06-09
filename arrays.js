@@ -219,6 +219,220 @@ console.log(arr26);   //[10,20,30,10,20,30,40,50,60,70]
 
 
 
+let arr27 = [10,20,30,40,50,60,70,80,90,100];
+arr27.copyWithin(2,5);
+console.log(arr27);   //[10,  20, 60, 70,  80, 90, 100, 80, 90, 100]
+
+
+let arr28 = [10,20,30,40,50,60,70,80,90,100];
+arr28.copyWithin(3,8);
+console.log(arr28); //[10, 20, 30, 90, 100, 60, 70, 80, 90, 100]
+
+
+let arr29 = [10,20,30,40,50,60,70,80,90,100];
+arr29.copyWithin(-6,-3);
+console.log(arr29);     //[10,  20, 30, 40,  80, 90, 100, 80, 90, 100]
+
+
+let arr30 = [10,20,30,40,50,60,70,80,90,100];
+arr30.copyWithin(2,4,8);
+console.log(arr30);   //[10, 20, 50, 60,  70, 80, 70, 80, 90, 100]
+
+
+let arr31 = [10,20,30,40,50,60,70,80,90,100];
+console.log( arr31.slice(3,6) );                //[ 40, 50, 60 ]
+console.log( arr31.slice(1,3) );                //[ 20, 30 ]
+console.log( arr31.slice(0,1) );                //[ 10 ]
+console.log( arr31.slice(9) );                  //[ 100 ]
+
+
+//concat
+let arr32 = [10,20];
+let arr33 = [30,40];
+let arr34 = [50,60];
+let arr35 = [...arr32,...arr33,...arr34];
+console.log(arr35);   //[ 10, 20, 30, 40, 50, 60 ]
+
+let arr36 = [10,20,30,40,50,60,70,80,90,100];
+let arr37 = arr36.slice(5);
+let arr38 = arr36.slice(0,5);
+let arr39 = [...arr37,...arr38];
+console.log(arr39);    //[60,70,80,90,100,10,20,30,40,50]
+
+
+let arr40 = [10,20,30,40,50,60,70,80,90,100];
+//[10,20,60,70,80]
+
+
+
+
+
+
+
+//reverse()
+let arr41 = [10,20,30,40,50];
+console.log(arr41.reverse());           //[ 50, 40, 30, 20, 10 ]
+
+
+//console.log( "Hello".reverse() );   
+//TypeError: "Hello".reverse is not a function
+
+console.log(
+    Array.from("Hello").reverse().toString().replace(",","")
+);
+//ol,l,e,H
+console.log(
+    Array.from("Welcome").reverse().toString().replace(/,/g,"")
+);
+//emocleW
+console.log(
+    Array.from("ReactJS").reverse().toString().replaceAll(",","")
+);  
+//SJtcaeR
+
+console.log(
+    Array.from("Angular14").reverse().join("")
+);
+//41ralugnA
+
+
+let arr42 = ["Angular14","ReactJS","NodeJS","VueJS"];
+//["VueJS","NodeJS","ReactJS","Angular14"]
+//["41ralugnA","SJtcaeR","SJedoN","SJeuV"]
+
+
+let str = " welcome ";
+console.log(str.length);                    //9
+console.log( str.trim().length );           //7
+console.log( str.trimStart().length );      //8
+console.log( str.trimEnd().length );        //8
+
+
+let str1 = "Hello";
+console.log( str1.padStart(10,"#") );  //#####Hello
+let str2 = "Welcome";
+console.log( str2.padEnd(20,"$") );   
+                            //Welcome$$$$$$$$$$$$$
+let str3 = "Sathya Technologies";
+console.log( str3.padStart(24,"*").padEnd(29,"*") );
+//*****Sathya Technologies*****
+
+
+let str4 = "welcome to javascript";
+console.log(str4.split(" "));
+//[ 'welcome', 'to', 'javascript' ]
+
+
+let str5 = "welcome$to#fullstack@ui";
+//["welcome","to","fullstack","ui"]
+console.log(
+    str5.replaceAll("$"," ").replaceAll("#"," ").replaceAll("@"," ").split(" ")
+);
+//replace() with regular expression
+
+let str6 = "welcome";
+console.log(Array.from(str6));
+console.log(str6.split(""));
+//['w','e','l','c','o','m','e']
+
+
+let str7 = "welcome to javascript";
+console.log(
+    str7.replaceAll(" ","").split("")
+);
+//['w','e','l','c','o','m','e','t','o','j','a','v','a','s','c','r','i','p','t']
+
+let str8 = "welcome to javascript";
+console.log(str8.substring(0,7));       //welcome
+console.log(str8.substring(8,10));      //to
+console.log(str8.substring(11));        //javascript
+
+
+let str9 = "welcome to arrays manipulations upto ES6 version";
+//welcome
+//to
+//arrays
+//manipulations
+//upto
+//ES6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
