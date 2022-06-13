@@ -1,0 +1,251 @@
+<!--
+    JSON
+    ****
+        JSON Stands for Java Script Object Notation
+
+        JSON also called as "JavaScript Objects"
+
+        JSON, used to transfer the data over the "Network"
+
+        JSON is light weight
+
+        Parsing(Reading) of JSON Eazy
+
+        Syntax
+        ******
+        Objects --- {}
+
+        Arrays  --- []
+
+        data    --- key & value pairs
+
+        key & value separated by using ":"
+
+        key & value pairs separated by using ","
+
+-->
+
+
+<!--
+<script>
+    let obj = {
+        sub_one : "ReactJS",
+        sub_two : "NodeJS",
+        sub_three : "MongoDB"
+    };
+    //read the data by using . opearator
+    console.log(
+        obj.sub_one,
+        obj.sub_two,
+        obj.sub_three
+    );
+    //read the data by using [] opearator
+    console.log(
+        obj["sub_one"],
+        obj["sub_two"],
+        obj["sub_three"]
+    );
+    //read the data by using destructuring (ES6)
+    let {sub_one,sub_two,sub_three} = obj;
+    console.log(sub_one,sub_two,sub_three);
+    //read the data by using for...in loop
+    for(let key in obj){
+        console.log(obj[key]);
+    }
+</script>
+-->
+
+
+
+<!--
+<script>
+    let obj = {
+        frontend:{sub_one:"ReactJS"},
+        backend:{sub_one:"NodeJS"},
+        database:{sub_one:"MongoDB"}
+    };
+    console.log(
+        obj.frontend.sub_one,
+        obj.backend.sub_one,
+        obj.database.sub_one
+    );
+    //ReactJS NodeJS MongoDB
+</script>
+-->
+
+<!--
+<script>
+    let obj = {
+        obj1:{obj2:{sub_one:"ReactJS"}}
+    };
+    console.log( obj.obj1.obj2.sub_one );
+    //ReactJS
+</script>
+-->
+<!--
+<script>
+    let obj = {
+        obj1:{obj2:{sub_one:"ReactJS"},
+              obj3:{sub_one:"NodeJS"},
+              obj4:{sub_one:"MongoDB"}}
+    };
+    console.log( obj.obj1.obj2.sub_one );
+    console.log( obj.obj1.obj3.sub_one );
+    console.log( obj.obj1.obj4.sub_one );
+    //ReactJS    NodeJS    MongoDB
+</script>
+-->
+<!--
+<script>
+    let obj = {
+        key1 : "Hello_1",
+        key2 : "Hello_2",
+        key3 : "Hello_3"
+    };
+    delete obj.key2;
+    console.log(obj);
+    //{key1: 'Hello_1', key3: 'Hello_3'}
+</script>
+-->
+<!--
+<script>
+    let obj = {
+        sub_one : "ReactJS",
+        sub_two : "NodeJS",
+        sub_three : "MongoDB",
+        sub_four : "Python"
+    };
+    delete obj.sub_four;
+    console.log(obj);
+    //{sub_one: 'ReactJS', sub_two: 'NodeJS', sub_three: 'MongoDB'}
+</script>
+-->
+<!--
+<script>
+    let obj1 = {
+        sub_one : "ReactJS"
+    };
+    let obj2 = {
+        sub_two : "NodeJS"
+    };
+    let obj3 = {
+        sub_three : "MongoDB"
+    };
+    let obj4 = {...obj1,...obj2,...obj3};
+    console.log(obj4);
+    //{sub_one: 'ReactJS', sub_two: 'NodeJS', sub_three: 'MongoDB'}
+</script>
+-->
+<!--
+<script>
+    let obj1 = {key3:"Hello_3"};
+    let obj2 = {key2:"Hello_2"};
+    let obj3 = {key1:"Hello_1"};
+    let obj4 = {...obj3,...obj2,...obj1};
+    console.log(obj4);
+    //{key1:"Hello_1",key2:"Hello_2",key3:"Hello_3"}
+</script>
+-->
+<!--
+<script>
+    let obj = {
+        key1 : "Hello_1",
+        key2 : "Hello_2",
+        key3 : "Hello_3"
+    };
+    console.log( Object.keys(obj) );        
+                    //['key1', 'key2', 'key3']
+    console.log( Object.values(obj) );
+                    //['Hello_1', 'Hello_2', 'Hello_3']
+</script>
+-->
+
+<!--
+<script>
+    let obj1 = {
+        key1 : "Hello_1"
+    };
+    let obj2 = {
+        ...obj1,
+        key2 : "Hello_2"
+    };
+    let obj3 = {
+        ...obj2,
+        key3 : "Hello_3"
+    };
+    console.log(obj1);      //{key1: 'Hello_1'}
+    console.log(obj2);      //{key1: 'Hello_1', key2: 'Hello_2'}
+    console.log(obj3);      
+    //{key1: 'Hello_1', key2: 'Hello_2', key3: 'Hello_3'}
+</script>
+-->
+
+<!--
+<script>
+    let obj = {
+        key1 : "Hello_1",
+        key1 : "Hello_2"
+    };
+    console.log(obj);  //{key1: 'Hello_2'}
+</script>
+-->
+
+<script>
+    let obj = {
+        key1 : "Hello_1",
+        key2 : "Hello_2",
+        key3 : "Hello_3",
+        key1 : "Welcome_1",
+        key2 : "Welcome_2",
+        key3 : "Welcome_3"
+    };
+    console.log(obj);
+    //{key1: 'Welcome_1', key2: 'Welcome_2', key3: 'Welcome_3'}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
