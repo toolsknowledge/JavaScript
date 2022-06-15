@@ -385,6 +385,7 @@
 </script>
 -->
 
+<!--
 <script>
     let obj1 = {key1 : "Hello_1"};
     let obj2 = {key2 : "Hello_2"};
@@ -392,9 +393,92 @@
     console.log(obj3);
     //{key1: 'Hello_1', key2: 'Hello_2'}
 </script>
+-->
 
+<!--
+<script>
+    let arr = [
+        {"p_id":111,"p_name":"p_one","p_cost":10000},
+        {"p_id":222,"p_name":"p_two","p_cost":20000},
+        {"p_id":333,"p_name":"p_three","p_cost":30000},
+        {"p_id":444,"p_name":"p_four","p_cost":40000},
+        {"p_id":555,"p_name":"p_five","p_cost":50000}
+    ];
+    document.write(`
+        <table>
+            <tr>
+                <th>SNO</th>
+                <th>P_ID</th>
+                <th>P_NAME</th>
+                <th>P_COST</th>
+            </tr>
+    `);
+     arr.forEach((element,index)=>{
+        document.write(`<tr>
+                <td>${index+1}</td>
+                <td>${element.p_id}</td>
+                <td>${element.p_name}</td>
+                <td>${element.p_cost}</td>
+            </tr>`);
+     });
+     document.write(`</table>`);
+</script>
 
+<script>
+    let arr = [
+        {"s_code":1,"s_name":"Angular"},
+        {"s_code":2,"s_name":"React"},
+        {"s_code":3,"s_name":"VueJS"},
+        {"s_code":4,"s_name":"NodeJS"},
+        {"s_code":5,"s_name":"MongoDB"}
+    ];
+    document.write(`
+        <table>
+            <tr>
+                <th>SNO</th>
+                <th>S_CODE</th>
+                <th>S_NAME</th>
+            </tr>
+    `);
+    arr.forEach((element,index)=>{
+        document.write(`<tr>
+                <td>${index+1}</td>
+                <td>${element.s_code}</td>
+                <td>${element.s_name}</td>
+            </tr>`);
+    });
+    document.write(`</table>`);
+</script>
+-->
 
+<!--
+    JSON Server
+    ***********
+        JSON Server, used to develop the Rest API'S
+        Ex.
+            GET
+            POST
+            PUT
+            DELETE
+            HEAD
+            TRACE
+            ---
+            ---
+            ---
+        JSON Server by default Running on Port No.3000
+
+        JSON Server Supports only JSON Data
+
+        we will test rest api's by using Postman
+
+        JSON Server installation is command based installation
+
+        > npm install --location=global json-server
+
+        we will load json data by using following command
+
+        > json-server --watch data.json
+-->
 
 
 

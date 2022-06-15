@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "p_id": "p101",
+      "p_name": "p_one",
+      "p_cost": 10000
+    },
+    {
+      "id": 3,
+      "p_id": "p103",
+      "p_name": "p_three",
+      "p_cost": 30000
+    },
+    {
+      "id": 4,
+      "p_id": "p104",
+      "p_name": "p_four",
+      "p_cost": 40000
+    }
+  ]
+}
