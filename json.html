@@ -479,6 +479,30 @@
 
         > json-server --watch data.json
 -->
+<!--
+<script>
+    let obj = {"key1":"Hello_1"};
+    console.log( typeof obj );      //object
+    let str = JSON.stringify(obj);
+    console.log( typeof str );      //string
+</script>
+-->
+
+<script>
+    let obj1 = {"key1":"Hello_1"};
+    console.log( typeof obj1 );         //object
+    
+    let str1 = JSON.stringify(obj1);
+    console.log( typeof str1 );         //string
+
+    let obj2 = JSON.parse(str1);
+    console.log( typeof obj2 );         //object
+</script>
+
+
+
+
+
 
 
 

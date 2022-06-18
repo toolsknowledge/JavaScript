@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+    </head>
+    <body>
+        <!--
+            <p id="my_paragraph"></p>
+        -->
+
+        <!--
+            <h1 id="my_h1"></h1>
+            <h2 id="my_h2"></h2>
+        -->
+
+        <!--
+        <input type="text" id="uname">
+        <br><br>
+        <input type="password" id="upwd">
+        <br><br>
+        <button id="my_btn">Login</button>
+        -->
+
+        <!--
+        <input type="text" id="box1"> 
+        <br><br>
+        <input type="text" id="box2">
+        <br><br>
+        <button id="my_btn">Click Me</button>
+        -->
+
+        <!--
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        -->
+
+        <!--
+        <h5></h5>   
+        <h5></h5>   
+        <h5></h5>   
+        <h5></h5>   
+        <h5></h5>
+        -->
+        
+        <!--
+        <p class="my_class"></p>
+        <p class="my_class"></p>
+        <p class="my_class"></p>
+        <p class="my_class"></p>
+        <p class="my_class"></p>
+        -->
+
+        <!--
+        <h1 class="class_one"></h1>
+        <h1 class="class_one"></h1>
+        <h1 class="class_one"></h1>
+        <h1 class="class_one"></h1>
+        <h1 class="class_one"></h1>
+        -->
+
+        <!--
+            <div>Hello</div>
+        -->
+
+
+        <!--
+        <h1></h1>      my_key = "welcome" -->
+
+
+        <!-- <div></div> -->
+        
+        <!-- <div></div> -->
+
+        <!--
+        <div>
+            <h2>Hello</h2>
+        </div>
+        -->
+
+
+        <!--
+        <div>
+            <b>Hello</b>
+        </div>
+        -->
+
+
+        <!-- <div>
+            <p>Paragraph</p>
+        </div> -->
+
+
+        <!--
+        <div>
+            <h1>Hello_1</h1>
+            <p>Hello_2</p>
+        </div>
+        -->
+
+        <!--
+        <div>
+            <p>Hello</p>
+        </div>
+        -->
+
+        <!--
+        <div>
+            <h2>Hello_2</h2>
+
+            <h4>Hello_4</h4>
+        </div>
+        -->
+
+
+        <!-- <h1>Hello</h1> -->
+
+        <!-- <div>Hello</div> -->
+
+        <p>Hello_1</p>
+        <p>Hello_1</p>
+        <p>Hello_1</p>
+        <p>Hello_1</p>
+        <p>Hello_1</p>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    <!--
+    <script>
+        document.getElementById("my_paragraph").innerHTML = "welcome to dom manipulations";
+    </script>
+    -->
+
+    <!--
+    <script>
+       let btn = document.getElementById("my_btn");
+       btn.onclick = login;
+       function login(){
+            document.getElementById("uname").value == "Sathya" &&
+            document.getElementById("upwd").value == "Sathya123" ?
+            alert("Login Success") : alert("Login Fail");
+       }
+    </script>
+    -->
+
+    <!--
+    <script>
+        let btn = document.getElementById("my_btn");
+        btn.onclick = clickMe
+        function clickMe(){
+           document.getElementById("box2").value = "Welcome to "+document.getElementById("box1").value;
+        }
+    </script>
+    -->
+
+    <!--
+    <script>
+        let allParagraphs = document.getElementsByTagName("p");
+        for(let p of allParagraphs){
+            p.innerHTML = "Hello";
+        }
+    </script>
+    -->
+
+    <!-- <script>
+        let allParagraphs = document.getElementsByClassName("my_class");
+        for(let p of allParagraphs){
+            p.innerHTML = "Hello";
+        }
+    </script> -->
+
+
+    <!-- <script>
+        let div = document.querySelector("div");
+        div.setAttribute("key1","value1");
+        console.log( div.getAttribute("key1") );
+        div.removeAttribute("key1");
+    </script> -->
+
+
+    <!--
+    <script>
+        let div = document.querySelector("div");
+
+        let p = document.createElement("p");
+        p.textContent = "Paragraph1";
+
+        div.appendChild(p);
+
+        let b = document.createElement("b");
+        b.textContent = "Bold Text";
+
+        div.appendChild(b);
+    </script>
+    -->
+
+    <!--
+    <script>
+        let div = document.querySelector("div");
+
+        let h2 = document.querySelector("h2");
+
+        let h1 = document.createElement("h1");
+        h1.textContent = "welcome";
+
+        div.replaceChild(h1,h2);
+
+    </script>
+    -->
+
+    <!--
+    <script>
+        let div = document.querySelector("div");
+        let p = document.querySelector("p");
+        let duplicate_p = p.cloneNode(true);
+        div.appendChild(duplicate_p);
+    </script>
+    -->
+
+    <!--
+    <script>
+        let div = document.querySelector("div");
+        let p = document.querySelector("p");
+
+        let h1 = document.createElement("h1");
+        h1.textContent = "Hello";
+
+        div.insertBefore(h1,p);
+    </script>
+    -->
+
+    <!--
+    <script>
+        let h1 = document.querySelector("h1");
+        h1.style.color = "red";
+        h1.style.backgroundColor = "yellow";
+    </script>
+    -->
+
+
+    <script>
+        // let p = document.querySelector("p");
+        // p.style.color = "red";
+
+
+        let allParagraphs = document.querySelectorAll("p");
+        allParagraphs[0].style.color = "red";
+        allParagraphs[1].style.color = "green";
+        allParagraphs[2].style.color = "blue";
+        allParagraphs[3].style.color = "orange";
+        allParagraphs[4].style.color = "yellow";
+    </script>
+
+
+</html>
